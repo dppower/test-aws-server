@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html>
+<head>
+    <base href="/">
+    <title>Auth Test</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="static/normalize.css">
+    <link rel="stylesheet" href="static/style.css">
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="scripts/core-js/client/shim.min.js"></script>
+
+    <script src="scripts/zone.js/dist/zone.js"></script>
+    <script src="scripts/systemjs/dist/system.src.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="static/system-config.js"></script>
+    <script>
+        System.import("app").catch(function(err){console.error(err);});
+    </script>
+</head>
+
+<!-- 3. Display the application -->
+<body>
+    <app-component>Loading...</app-component>
+</body>
+
+</html>

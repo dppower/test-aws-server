@@ -1,0 +1,7 @@
+.vs/
+obj/
+bin/
+build/
+node_modules/
+server-config/
+twitch_access.json
